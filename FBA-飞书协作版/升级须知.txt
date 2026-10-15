@@ -1,0 +1,7 @@
+飞书免费版优化 v2.0｜适用3-5人
+
+已使用旧版：先备份飞书和网页JSON，复制旧.env到新项目后用本次新源码替换，执行 npm test、npm start；不要运行 npm run seed。
+第一次安装：复制.env.example为.env，填飞书凭证及TEAM_PASSWORD，依次运行 npm run setup、npm run seed、npm test、npm start。
+
+网页之间的数据同步约8秒，服务器每20分钟从飞书多维表格读取一次；网页修改依旧会立即写飞书。直接在飞书改的数据最多等待约20分钟（网络正常且有人访问时）。
+详细部署/配置与限制，请阅读 README.md。
